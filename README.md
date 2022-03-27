@@ -12,7 +12,7 @@ After instalation the program will ask for the directory
 Next you can choose the format, you can see the list of tracks. It is also possible to get the information about tracks
 and album title from the CDDB database. Only if the database contains the data.
 
-After copying files, the abcde module will docode them to specified output format.
+After copying files, the abcde module will decode them to specified output format.
 
 Next you can insert another CD, change the settings or just run with the same options.
 
