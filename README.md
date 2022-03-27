@@ -15,3 +15,7 @@ and album title from the CDDB database. Only if the database contains the data.
 After copying files, the abcde module will docode them to specified output format.
 
 Next you can insert another CD, change the settings or just run with the same options.
+
+Contact raspbianlukas@gmail.com
+
+
