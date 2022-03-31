@@ -10,9 +10,7 @@ from subprocess import Popen
 from PIL import  ImageTk, Image
 from  subprocess import check_output, PIPE, Popen
 import os.path
-# from PyQt5.QtCore import *
-# from PyQt5.QtGui import *
-# from PyQt5.QtWidgets import *
+
 import sys
 import time
 import atexit
@@ -251,14 +249,11 @@ os.system("cd /home/; sudo touch Plik_konfiguracyjny.txt; sudo chmod -R ugo+rw /
 res=img.resize((170, 140), Image.ANTIALIAS)
 cel =ImageTk.PhotoImage(res)
 label2=Label(root, image=cel, width=170, height=140)
-# flac = Checkbutton( text="Wybierz sciezke domyslna", onvalue=1,  offvalue=0,  indicator=0, background="light blue", cursor="hand2", borderwidth=10)
-# flac.pack(side=TOP)
+
 label2.place(x=720, y=30)
 current=Label(root, text="OBECNA SCIEZKA:", font=("Helvetica", 18))
 current.place(x=60, y=50)
-# cmd="eject"
 
-# os.system(cmd)
 
 varr=StringVar()
 labelu=Label(root,textvariable=varr, font=("Helvetica", 18), fg="black")
@@ -535,11 +530,7 @@ Reset.place(x=70, y=300)
         
 
 
-# def check():
-# #     os.system("sudo apt-get install -y eyed3")
-#     print(os.getcwd())
-#     info.destroy()
-# #     subprocess.call("cd /home/pi; python3 okno_canc.py", shell=True) # Wywolanie dodatkowego programu konczacego proces.
+
 
 
 
@@ -605,12 +596,11 @@ def okno_abcde():  # Okno pokazuje rodzaj formatu i przycisk "OK" startujacy pro
         
                 sudocoman="cd"+" "+actual
                 proc=Popen(['sudo','abcde', '-N'],  stdin=None, stdout=None, stderr=None, close_fds=True)# Program nie czeka az zakonczy sie ten proces.
-                #subprocess.call(['python3', 'canc_test.py'])
-                #exec(open("/home/pi/can.py").read())
+                
                 os.chdir(actual)
-                #can=subprocess.Popen("sudo python3 can.py", shell=True)
+                
                 can=subprocess.Popen(["sudo", "python3", "can.py"], stdout=subprocess.PIPE, stdin=subprocess.PIPE)
-                #os.system("sudo python3 /home/pi/can.py")
+                
                 
                 
                 proc.wait()
@@ -625,45 +615,7 @@ def okno_abcde():  # Okno pokazuje rodzaj formatu i przycisk "OK" startujacy pro
                 messagebox.showinfo("CD-ROM","CD rom not loaded")
                 info.destroy() 
                 
-        #os.system("eject")
-        
-        
-#         pgrep= Popen("pgrep abcde", shell=True, stdout=subprocess.PIPE)
-# 
-#         wynikk=pgrep.stdout.read()
-#         status=str(wynikk)
-#         print(status)
-#         print(status)
-#         print(status)
       
-        
-#         while True:            
-#             if len(status)==5:
-#                 print("dziala")
-#             elif len(status)==0:
-#                 print(" nie dziala")
-        
-        
-        
-        
-#         while True:   
-#             if not os.path.exists("/proc/"+change):
-#                 print("przestal dzialac")
-#                 break
-        
-#         while True:            
-#             if len(status)<5:
-#                 print("program nie dziala")
-#                 progbar.stop()
-#                 messagebox.showinfo("Koniec", "Koniec")
-#                 info.destroy()
-#                 break
-#             elif len(status)>3:
-#                 print("dziala")
-#                 continue
-#                 
-       
-        
         
                     
         
@@ -674,17 +626,7 @@ def okno_abcde():  # Okno pokazuje rodzaj formatu i przycisk "OK" startujacy pro
 
 
 
-# def poll():
-#             while True:
-#             
-#                 if  poll == None:
-#                     print("it ends")
-#                     progbar.stop()
-#                     messagebox.showinfo("", "Koniec")
-#                     info.destroy()
-#                     break
-#         
-#     
+
         
         
         checka=Button(info, text="OK", command=check, cursor="hand2")
@@ -718,14 +660,7 @@ rozpocznij.place(x=40, y=450)
 
 
 
-# def cancel():
-    
-    # kill= subprocess.Popen("killall -9 abcde", shell=True, stdout=subprocess.PIPE)
-    # oukill=kill.stdout.read()
 
-# Cancel=Button(root, text="STOP", command=cancel, background="brown",fg="white", cursor="hand2",font=("Arial", 12, 'bold'))
-
-# Cancel.place(x=600, y=500)
    
 
 
