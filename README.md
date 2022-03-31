@@ -1,6 +1,7 @@
 # Rapid-CD-ripper
 
 Beta version
+
 GUI for copying CD tracks, Raspberry Pi OS
 
 
