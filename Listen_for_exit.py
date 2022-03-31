@@ -13,7 +13,7 @@ tstet.close()
 
 print(op)
 
-while True:  #Sprawdzenie czy aplikacja cmd_2.py wciąż działa.
+while True:  #Sprawdzenie czy aplikacja główna wciąż działa.
     
     if not os.path.exists("/proc/"+op):
         name="abcde.conf"  
