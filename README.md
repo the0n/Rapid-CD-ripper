@@ -21,4 +21,17 @@ Next you can insert another CD, change the settings or just run with the same op
 
 Contact raspbianlukas@gmail.com
 
+Examples screen
+
+
+<b>Window for choosing the working directory</b>
+
+
+![image](https://user-images.githubusercontent.com/74413781/179727930-ccad7a98-314e-4d97-9fe8-991f0f062d7c.png)
+
+<b>Program main window</b>
+
+
+
+<img src="https://user-images.githubusercontent.com/74413781/179727727-0aad3979-78ac-4711-b9dc-83c7d755d9b7.png" width="560" height="400">
 
